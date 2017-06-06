@@ -3,10 +3,11 @@
 <?php
 require 'vendor/autoload.php';
 
-use Acme\SayHelloCommand;
+use Acme\NewCommand;
+use GuzzleHttp\Client;
 use Symfony\Component\Console\Application;
 
 $app = new Application("Laracasts Demo", '1.0');
-$app->add(new SayHelloCommand());
+$app->add(new NewCommand(new Client()));
         
 $app->run();        
