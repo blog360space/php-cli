@@ -1,0 +1,13 @@
+{
+    "name": "vendor/cli1",
+    "description": "Description of project cli1.",
+    "authors": [
+        {
+            "name": "hungtran",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "symfony/console" : "~3.0"
+    }
+}
